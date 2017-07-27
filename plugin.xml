@@ -32,7 +32,7 @@
    <platform name="android">
       <config-file parent="/*" target="res/xml/config.xml">
          <feature name="rtsplayer">
-            <param name="android-package" value="cordova-plugin-dride-rtsp.rtsplayer" />
+            <param name="android-package" value="cordova.plugin.dride.rtsp.rtsplayer" />
          </feature>
       </config-file>
       <config-file parent="/*" target="AndroidManifest.xml">
@@ -44,9 +44,9 @@
          <uses-permission android:name="android.permission.CAMERA" />
       </config-file>
        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-        <activity android:name="cordova-plugin-dride-rtsp.rtsplayer.rtsplayerActivity"></activity>
+        <activity android:name="cordova.plugin.dride.rtsp.rtsplayer.rtsplayerActivity"></activity>
       </config-file>
-      <source-file src="src/android/rtsplayer.java" target-dir="src/br/com/stek/rtsplayer" />
-      <source-file src="src/android/rtsplayerActivity.java" target-dir="src/br/com/stek/rtsplayer" />
+      <source-file src="src/android/rtsplayer.java" target-dir="src/cordova/plugin/dride/rtsp/rtsplayer" />
+      <source-file src="src/android/rtsplayerActivity.java" target-dir="src/cordova/plugin/dride/rtsp/rtsplayer" />
    </platform>
 </plugin>
