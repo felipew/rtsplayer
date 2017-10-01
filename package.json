@@ -1,0 +1,47 @@
+{
+  "name": "cordova-dride-rtsp-player",
+  "version": "1.0.1",
+  "description": "Cordova RTSP Video Player",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "cordova": {
+    "id": "cordova-dride-rtsp-player",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "rtsp",
+    "dride",
+    "player",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dride/cordova-dride-rtsp-player.git"
+  },
+  "contributors": [
+    {
+      "name": "Felipe Wagner",
+      "web": "https://twitter.com/flpwgr"
+    },
+    {
+      "name": "Yossi Neiman",
+      "web": "https://twitter.com/saoron",
+      "email": "hello@dride.io"
+    }
+  ],
+  "keywords": [],
+  "author": "Yossi Neiman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dride/cordova-dride-rtsp-player/issues"
+  },
+  "homepage": "https://github.com/dride"
+}

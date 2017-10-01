@@ -1,4 +1,4 @@
-package br.com.stek.rtsplayer;
+package cordova.plugin.dride.rtsplayer;
 
 import android.app.Activity;
 import android.content.Context;

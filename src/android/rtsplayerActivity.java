@@ -1,4 +1,4 @@
-package br.com.stek.rtsplayer;
+package cordova.plugin.dride.rtsplayer;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -69,7 +69,7 @@ public class rtsplayerActivity extends Activity implements SurfaceHolder.Callbac
         surfaceView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Para sair clique em voltar",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Press Back to Exit",Toast.LENGTH_SHORT).show();
             }
         });
         surfaceHolder = surfaceView.getHolder();
@@ -95,7 +95,7 @@ public class rtsplayerActivity extends Activity implements SurfaceHolder.Callbac
 
             mediaPlayer.prepareAsync();
         } catch (IOException e) {
-            Toast.makeText(getApplicationContext(), "Falha ao abrir video",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Failed to open video",Toast.LENGTH_SHORT).show();
             e.printStackTrace();
             finishWithError();
         }
@@ -132,7 +132,7 @@ public class rtsplayerActivity extends Activity implements SurfaceHolder.Callbac
     @Override
     public boolean onError(MediaPlayer mp, int what, int extra) {
         Log.d("FLP", "onError fired");
-        Toast.makeText(getApplicationContext(), "Falha ao abrir video", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Failed to open video", Toast.LENGTH_SHORT).show();
         finishWithError();
         return false;
     }

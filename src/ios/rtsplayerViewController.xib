@@ -22,10 +22,10 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="3zj-aF-UYF"/>
                     </constraints>
-                    <color key="barTintColor" red="0.21568627450980393" green="0.68627450980392157" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" red="0" green="0" blue="0" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
                         <navigationItem id="36r-60-0nh">
-                            <barButtonItem key="leftBarButtonItem" title="Voltar" id="Fbz-SJ-i03">
+                            <barButtonItem key="leftBarButtonItem" title="Close" id="Fbz-SJ-i03">
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="buttonDismissPressed:" destination="-1" id="b4a-FN-aPE"/>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="br.com.stek.rtsplayer" version="1.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        id="cordova-plugin-dride-rtsp" 
+        version="1.0.1">
    <name>rtsplayer</name>
    <js-module name="rtsplayer" src="www/rtsplayer.js">
       <clobbers target="cordova.plugins.rtsplayer" />
@@ -32,7 +35,7 @@
    <platform name="android">
       <config-file parent="/*" target="res/xml/config.xml">
          <feature name="rtsplayer">
-            <param name="android-package" value="br.com.stek.rtsplayer.rtsplayer" />
+            <param name="android-package" value="cordova.plugin.dride.rtsplayer.rtsplayer" />
          </feature>
       </config-file>
       <config-file parent="/*" target="AndroidManifest.xml">
@@ -40,13 +43,12 @@
          <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
          <uses-permission android:name="android.permission.WAKE_LOCK" />
          <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-         <uses-permission android:name="android.permission.RECORD_AUDIO" />
-         <uses-permission android:name="android.permission.CAMERA" />
       </config-file>
        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-        <activity android:name="br.com.stek.rtsplayer.rtsplayerActivity"></activity>
+        <activity android:name="cordova.plugin.dride.rtsplayer.rtsplayerActivity"></activity>
       </config-file>
-      <source-file src="src/android/rtsplayer.java" target-dir="src/br/com/stek/rtsplayer" />
-      <source-file src="src/android/rtsplayerActivity.java" target-dir="src/br/com/stek/rtsplayer" />
+      <source-file src="src/android/rtsplayer.java" target-dir="src/io/dride/rtsplayer" />
+      <source-file src="src/android/rtsplayerActivity.java" target-dir="src/io/plugin/rtsplayer" />
    </platform>
+   
 </plugin>
